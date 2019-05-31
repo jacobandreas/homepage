@@ -1,0 +1,38 @@
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  margin: 1em 0;
+}
+
+ul li.pubyear {
+  font-weight: bold;
+}
+
+ul li > span {
+  display: block;
+}
+
+ul li > span.papertitle {
+  /*text-decoration: underline;*/
+  font-style: italic;
+}
+
+ul li .award {
+  font-weight: bold;
+}
+
+.highlight {
+  margin: 1.5em -1em;
+  padding: 1em;
+  border-radius: 5px;
+  background: #eee;
+}
+
+.job {
+  text-align: center;
+  background: #d7e6f4;
+  color: #234;
+}
