@@ -25,6 +25,10 @@ a {
   border-radius: 5px;
 }
 
+hr {
+  border-top: 2px solid #eee;
+}
+
 .credit {
   font-size: .8em;
   color: #888;
