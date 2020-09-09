@@ -46,3 +46,15 @@ hr {
     margin-bottom: 25px;
   }
 }
+
+table {
+  font-size: 1em;
+  border-spacing: .25em;
+  border-collapse: separate;
+  margin: -.5em;
+}
+
+table td {
+  padding: .25em;
+  background: #eee;
+}
