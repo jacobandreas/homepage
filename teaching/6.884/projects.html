@@ -1,0 +1,80 @@
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>6.884: project ideas</title>
+  <link href="../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../css/style.css" rel="stylesheet">
+  <style type="text/css">
+li {
+  margin-bottom: 1em;
+}
+  </style>
+</head>
+<body>
+<div class="content">
+  <h2>6.884: project ideas</h2>
+
+  <ul>
+    <li>
+      Most of the experiments we're looking at in this class, especially on very
+      small datasets, involve details of English syntax or morphology. Do these
+      experiments change if performed on typologically very different
+      languages? (E.g.: Do recent results on past tense formation in neural
+      models carry over to languages whose tense system is more complex than
+      English? Do tree-shaped models do anything in non-configurational
+      languages?
+    </li>
+
+    <li>
+      Take one of the diagnostic datasets we looked at in class (SCAN, CLUTRR,
+      etc.). Identify a new kind of generalization we might expect a model to
+      make and implement a corresponding dataset split. Does the relative
+      performance of existing models change on this dataset? Can you come up
+      with new model architectures (neural, symbolic, or both) that improve
+      performance? Concrete ideas: operationalize classical accounts of the
+      ``poverty of the stimulus'' by systematically excluding complex Wh
+      questions from training data; split SCAN (or more realistic semantic
+      parsing datasets) by syntactic depth rather than length.
+    </li>
+
+    <li>
+      If you work with data from human subjects: train a model to perform the
+      same task as your humans (as in the Hu et al. paper). Compare model
+      predictions to human behavior / judgments / brain recordings. What models
+      perform best? Are models with explicit symbolic scaffolding (RNNGs etc)
+      helpful?
+    </li>
+
+    <li>
+      Characterize, empirically or theoretically, behavior on out-of-sample data
+      in "unstructured" neural models like convnets or transformers. We saw that
+      sequence-to-sequence models often do the "wrong" thing from the
+      perspective of human users; what do they do instead? Something like
+      <a href="https://arxiv.org/abs/2006.14953">this paper</a> but with
+      training data.
+    </li>
+
+    <li>
+      For tasks with unstructured inputs but where an explicit symbolic
+      representation of the input is available at training time (e.g. kinship
+      graphs in CLUTRR), what's the best way to use it when making predictions
+      from unstructured data? Add prediction of the structured object as an
+      auxiliary loss at training time? Treat the structured object as a latent
+      variable and marginalize over it at test time? 
+    </li>
+
+    <li>
+      Analyze "symbolic" inductive bias in non-linguistic tasks with models
+      trained on language data. That is: get a big pretrained language model,
+      fine-tune it on reasoning problems encoded with arbitrary symbols, and
+      measure performance. (See e.g. 
+      <a href="https://medium.com/@melaniemitchell.me/can-gpt-3-make-analogies-16436605c446">
+      this blog post</a>.) Does pretraining help? Why? 
+    </li>
+  </ul>
+
+<div>
+
+</body>
+</html>
