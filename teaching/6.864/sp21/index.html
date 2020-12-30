@@ -1,0 +1,223 @@
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../../css/style.css" rel="stylesheet">
+<style type="text/css">
+  table td {
+    padding: 0.5em;
+  }
+
+  table td.noclass {
+    background: transparent;
+  }
+</style>
+</head>
+<body>
+<div class="content">
+  <h2>Natural Language Processing (6.806-864)</h2>
+
+  <p>
+  Generating and understanding human language remains one of the most exciting
+  (and challenging) frontiers in artificial intelligence research. In this class,
+  we'll survey contemporary prediction problems involving human language data,
+  and introduce probabilistic modeling and representation learning tools that can
+  be used to tackle them.
+  </p>
+
+  <h3>Course Staff</h3>
+
+  <p>
+    <b>Instructors</b><br>
+    Jacob Andreas (<a href="mailto:jda@mit.edu">jda@mit.edu</a>) <br>
+    Jim Glass (<a href="mailto:glass@csail.mit.edu">glass@csail.mit.edu</a>) <br>
+  </p>
+
+  <p>
+    <b>TAs</b><br>
+    Abby Bertics<br>
+    Dylan Doblar<br>
+    Ekin Akyurek<br>
+    Evan Hernandez<br>
+    Hongyin Luo<br>
+    Pranav Krishna<br>
+    Wei Fang 
+  </p>
+
+  <h3>Admin</h3>
+
+  <p>
+  Class will meet on Tuesdays and Thursdays from 1 to 2:30 PM ET. 
+  There will be two optional recitations (time TBD).
+  </p>
+
+  <p>
+  Office hours: (time TBD).
+  </p>
+
+  <h3>Grading</h3>
+
+  <p>
+  Students in both classes complete 3 homework assignments (a mix of written
+  work and code). Students in 6.806 will complete one additional homework
+  assignment.  Students in 6.864 will instead submit a final group project.
+  You are encouraged to work together on homework assignments, but all submitted
+  writeups and code should be done on your own.
+  </p>
+
+  <p>
+  6.806: 60% homework, 40% midterm <br>
+  6.864: 30% homework, 30% midterm, 40\% project
+  </p>
+
+  <p>
+  Grade scale: A [90, 100]; B [80, 90); C [70, 80); D [60, 70); F [0, 60).
+  </p>
+
+  <p>
+  Homework assignments lose 10\% for every late day. 
+  Final projects will not be accepted late!
+  </p>
+
+  <p>
+    <b>This is not a normal semester!</b> We want everyone to learn from this
+    class, and we can almost certainly find a way to accommodate any issues that
+    arise. If you're struggling, please reach out to Jacob or Jim as soon as
+    possible.
+  </p>
+
+  <h3>Syllabus</h3>
+
+  <table>
+    <!--<colgroup>
+      <col/>
+      <col style="width: 33%"/>
+      <col/>
+    </colgroup>-->
+    <tr>
+      <td>Tu 16 Feb</td>
+      <td>Introduction</td>
+      <td><a href="../sp20/lectures/intro.pdf">[sp20 slides]</a></td>
+    </tr>
+    <tr>
+      <td>Th 18 Feb</td>
+      <td>Text classification</td>
+      <td><a href="../sp20/lectures/classification.pdf">[sp20 slides]</a></td>
+    </tr>
+    <tr>
+      <td>Tu 23 Feb</td>
+      <td>Distributional semantics</td>
+      <td><a href="../sp20/lectures/distributional_sem.pdf">[sp20 slides]</a></td>
+    </tr>
+    <tr>
+      <td>Th 25 Feb</td>
+      <td>Word embeddings</td>
+    </tr>
+    <tr>
+      <td>Tu 2 Mar</td>
+      <td>Classical models of sequences (n-grams and HMMs)</td>
+    </tr>
+    <tr>
+      <td>Th 4 Mar</td>
+      <td>Conditional random fields</td>
+      <td><a href="../sp20/lectures/crfs.pdf">[sp20 slides]</a></td>
+    </tr>
+    <tr>
+      <td>Tu 9 Mar</td>
+      <td class="noclass">(no class)</td>
+    </tr>
+    <tr>
+      <td>Th 11 Mar</td>
+      <td>Neural sequence models (recurrent NNs)</td>
+    </tr>
+    <tr>
+      <td>Tu 16 Mar</td>
+      <td>Attention mechanisms</td>
+      <td><a href="../sp20/lectures/attention.pdf">[sp20 slides]</a></td>
+    </tr>
+    <tr>
+      <td>Th 18 Mar</td>
+      <td>Transformers</td>
+    </tr>
+    <tr>
+      <td>Tu 23 Mar</td>
+      <td class="noclass">(no class)</td>
+    </tr>
+    <tr>
+      <td>Th 25 Mar</td>
+      <td>Pretraining</td>
+      <td><a href="../sp20/lectures/pretraining.pdf">[sp20 slides]</a></td>
+    </tr>
+    <tr>
+      <td>Tu 30 Mar</td>
+      <td>Classical models of trees (PCFGs and tree CRFs)</td>
+      <td><a href="../sp20/lectures/trees.pdf">[sp20 slides]</a></td>
+    </tr>
+    <tr>
+      <td>Th 1 Apr</td>
+      <td>Neural models of trees</td>
+    </tr>
+    <tr>
+      <td>Tu 6 Apr</td>
+      <td>Advanced language modeling topics</td>
+    </tr>
+    <tr>
+      <td>Th 8 Apr</td>
+      <td>Machine reading and question answering</td>
+      <td><a href="../sp20/lectures/mrqa.pdf">[sp20 slides]</a></td>
+    </tr>
+    <tr>
+      <td>Tu 13 Apr</td>
+      <td>Speech (part 1)</td>
+    </tr>
+    <tr>
+      <td>Th 15 Apr</td>
+      <td>Speech (part 2)</td>
+    </tr>
+    <tr>
+      <td>Tu 20 Apr</td>
+      <td class="noclass">(no class)</td>
+    </tr>
+    <tr>
+      <td>Th 22 Apr</td>
+      <td>Interpretability</td>
+    </tr>
+    <tr>
+      <td>Tu 27 Apr</td>
+      <td>Dialog</td>
+    </tr>
+    <tr>
+      <td>Th 29 Apr</td>
+      <td>NLP and human language processing</td>
+    </tr>
+    <tr>
+      <td>Tu 4 May</td>
+      <td>[new!] Grammar induction</td>
+    </tr>
+    <tr>
+      <td>Th 6 May</td>
+      <td>Language and vision</td>
+    </tr>
+    <tr>
+      <td>Tu 11 May</td>
+      <td>[new!] Language and action</td>
+    </tr>
+    <tr>
+      <td>Th 13 May</td>
+      <td>Social and ethical considerations</td>
+      <td><a href="../sp20/lectures/ethics.pdf">[sp20 slides]</a></td>
+    </tr>
+    <tr>
+      <td>Tu 18 May</td>
+      <td>Project presentations</td>
+    </tr>
+    <tr>
+      <td>Th 20 May</td>
+      <td>Project presentations</td>
+    </tr>
+  </table>
+
+</body>
+</html>
