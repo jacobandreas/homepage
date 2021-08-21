@@ -2,15 +2,248 @@
 <head lang="en">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Advanced Natural Language Processing (6.806 / 6.864)</title>
+  <title></title>
   <link href="../../css/bootstrap.min.css" rel="stylesheet">
   <link href="../../css/style.css" rel="stylesheet">
+<style type="text/css">
+  table td {
+    padding: 0.5em;
+  }
+
+  table td.noclass {
+    background: transparent;
+  }
+</style>
 </head>
 <body>
 <div class="content">
-  <h2>Advanced Natural Language Processing (6.806 / 6.864)</h2>
-  
-  <h3><a href="sp20">Spring 2020</a></h3>
-  <h3><a href="sp21">Spring 2021</a></h3>
+  <h2>Natural Language Processing (6.806-864)</h2>
+
+  <p>
+  Generating and understanding human language remains one of the most exciting
+  (and challenging) frontiers in artificial intelligence research. In this class,
+  we'll survey contemporary prediction problems involving human language data,
+  and introduce probabilistic modeling and representation learning tools that can
+  be used to tackle them.
+  </p>
+
+  <h3>Course Staff</h3>
+
+  <p>
+    <b>Instructors</b><br>
+    Jacob Andreas (<a href="mailto:jda@mit.edu">jda@mit.edu</a>) <br>
+    Yoon Kim (<a href="mailto:yoonkim@mit.edu">yoonkim@mit.edu</a>) <br>
+  </p>
+
+  <p>
+    <b>TAs</b><br>
+    Dylan Doblar<br>
+    Deep Gupta<br>
+    Pranav Krishna<br>
+    Joe O'Connor<br>
+    Nitya Parthasarathy<br>
+    Julia Wagner
+  </p>
+
+  <h3>Admin</h3>
+
+  <p>
+  Homework, announcements, etc. will be distributed on Canvas.
+  </p>
+
+  <p>
+  Class will meet on Tuesdays and Thursdays from 11 to 12:30 PM ET in 4-149 and
+  simultaneously recorded on Zoom (see Canvas for link). Videos will be
+  available on canvas after class.
+  </p>
+
+  <h3>Grading</h3>
+
+  <p>
+  You are encouraged to work together on homework assignments, but all submitted
+  writeups and code should be done on your own.
+  </p>
+
+  <p>
+  50% homework, 50% midterm (students in 6.864 will complete extra problems).<br>
+  Grade scale: A [90, 100]; B [80, 90); C [70, 80); D [60, 70); F [0, 60).
+  </p>
+
+  <p>
+  Homework assignments lose 10% for every late day. 
+  Final projects will not be accepted late.
+  </p>
+
+  <p>
+    <b>This is (still) not a normal semester!</b> We want everyone to learn from this
+    class, and we can almost certainly find a way to accommodate any issues that
+    arise. If you're struggling, please reach out to Jacob or Yoon as soon as
+    possible.
+  </p>
+
+  <h3>Syllabus</h3>
+
+  <table>
+    <!--<colgroup>
+      <col/>
+      <col style="width: 33%"/>
+      <col/>
+    </colgroup>-->
+    <tr>
+      <td>Th 9 Sep</td>
+      <td>Introduction</td>
+      <td><a href="../sp20/lectures/intro.pdf">[sp20 slides]</a></td>
+    </tr>
+    <tr>
+      <td>Tu 14 Sep</td>
+      <td>Classification 1: linear models and deep networks</td>
+      <td><a href="../sp20/lectures/classification.pdf">[sp20 slides]</a></td>
+    </tr>
+    <tr>
+      <td>Th 16 Sep</td>
+      <td>Classification 2: recurrent networks</td>
+      <td><a href="https://www.dropbox.com/s/ieemdkq0geraj77/6864-2020-RNNs.pdf?dl=0">[sp20 slides]</a></td>
+    </tr>
+    <tr>
+      <td>Tu 21 Sep</td>
+      <td>Classification 3: attention</td>
+      <td><a href="../sp20/lectures/attention.pdf">[sp20 slides]</a></td>
+    </tr>
+    <tr>
+      <td>Th 23 Sep</td>
+      <td>Classification 4: </td>
+      <td><a href="https://www.dropbox.com/s/le7j40upvlwyo7n/NLP-Transformers-2020.pdf?dl=0">[sp20 slides]</a></td>
+    </tr>
+    <tr>
+      <td class="noclass"></td>
+      <td>HW1 (classification) due</td>
+    </tr>
+    <tr>
+      <td>Tu 28 Sep</td>
+      <td>Classification 5: more modeling tools</td>
+    </tr>
+    <tr>
+      <td>Th 30 Sep</td>
+      <td>Representation learning 1: distributed representations</td>
+      <td><a href="../sp20/lectures/distributional_sem.pdf">[sp20 slides]</a></td>
+    </tr>
+    <tr>
+      <td>Tu 5 Oct</td>
+      <td>Representation learning 2: Deep word representations</td>
+      <td><a href="https://www.dropbox.com/s/94r56cb29mzqa3a/6864-2020-Embeddings.pdf?dl=0">[sp20 slides]</a></td>
+    </tr>
+    <tr>
+      <td>Th 7 Oct</td>
+      <td>Representation learning 3: contextualized word representations</td>
+      <td><a href="../sp20/lectures/pretraining.pdf">[sp20 slides]</a></td>
+    </tr>
+    <tr>
+      <td class="noclass"></td>
+      <td>HW2 (representation learning) due</td>
+    </tr>
+    <tr>
+      <td>Tu 12 Oct</td>
+      <td>Structured prediction 1: finite-state sequence models</td>
+      <td><a href="https://www.dropbox.com/s/rxaqz8pb125dn4s/6864-2020-HMMs.pdf?dl=0">[sp20 slides]</a></td>
+    </tr>
+    <tr>
+      <td>Th 14 Oct</td>
+      <td>Structured prediction 2: conditional random fields</td>
+      <td><a href="../sp20/lectures/crfs.pdf">[sp20 slides]</a></td>
+    </tr>
+    <tr>
+      <td class="noclass"></td>
+      <td>Project proposal due</td>
+    </tr>
+    <tr>
+      <td>Tu 19 Oct</td>
+      <td>Structured prediction 3: trees</td>
+      <td><a href="../sp20/lectures/trees.pdf">[sp20 slides]</a></td>
+    </tr>
+    <tr>
+      <td>Th 21 Oct</td>
+      <td>Latent variable models 1</td>
+    </tr>
+    <tr>
+      <td class="noclass"></td>
+      <td>HW3 (structured prediction) due</td>
+    </tr>
+    <tr>
+      <td>Tu 26 Oct</td>
+      <td>Latent variable models 2</td>
+    </tr>
+    <tr>
+      <td>Th 28 Oct</td>
+      <td>How to write an NLP paper</td>
+    </tr>
+    <tr>
+      <td>Tu 2 Nov</td>
+      <td>Speech 1</td>
+      <td><a href="https://www.dropbox.com/s/ej4vzyjpp51pbbx/NLP-ASR-2020.pdf?dl=0">[sp20 slides]</a></td>
+    </tr>
+    <tr>
+      <td>Th 4 Nov</td>
+      <td>Speech 2</td>
+    </tr>
+    <tr>
+      <td class="noclass"></td>
+      <td>HW4 (dataset creation) due</td>
+    </tr>
+    <tr>
+      <td>Tu 9 Nov</td>
+      <td>Interpreting NLP models</td>
+    </tr>
+    <tr>
+      <td>Th 11 Nov</td>
+      <td class="noclass">(no class)</td>
+    </tr>
+    <tr>
+      <td>Tu 16 Nov</td>
+      <td>Human language processing</td>
+    </tr>
+    <tr>
+      <td>Tu 18 Nov</td>
+      <td>Guest lecture TBD</td>
+    </tr>
+    <tr>
+      <td class="noclass"></td>
+      <td>Project draft due</td>
+    </tr>
+    <tr>
+      <td>Tu 23 Nov</td>
+      <td>Grounded language learning</td>
+      <td><a href="https://www.dropbox.com/s/00tdaknt3zu509a/NLP-2020-crossmodal.pdf?dl=0">[sp20 slides]</a></td>
+    </tr>
+    <tr>
+      <td>Th 25 Nov</td>
+      <td class="noclass">(no class)</td>
+    </tr>
+    <tr>
+      <td>Tu 30 Nov</td>
+      <td>Social and ethical considerations</td>
+      <td><a href="../sp20/lectures/ethics.pdf">[sp20 slides]</a></td>
+    </tr>
+    <tr>
+      <td>Th 2 Dec</td>
+      <td>The future of NLP research</td>
+    </tr>
+    <tr>
+      <td>Tu 7 Dec</td>
+      <td>Project presentations</td>
+    </tr>
+    <tr>
+      <td>Th 9 Dec</td>
+      <td>Project presentations</td>
+    </tr>
+    <tr>
+      <td class="noclass"></td>
+      <td>Final project report due</td>
+    </tr>
+  </table>
+
+  <h2>Previous versions</h2>
+
+  <p><a href="sp21">Spring 2021</a>, <a href="sp20">Spring 2020</a></p>
+
 </body>
 </html>
