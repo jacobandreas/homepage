@@ -1,7 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Asap:400,400i,700');
+/*@import url('https://fonts.googleapis.com/css?family=Asap:400,400i,700');*/
+
+@font-face {
+  font-family: "CSAIL_Ebony";
+  src: url("fonts/CSAIL_Ebony-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "CSAIL_Ebony";
+  src: url("fonts/CSAIL_Ebony-RegularItalic.ttf");
+  font-style: italic, oblique;
+}
+
+@font-face {
+  font-family: "CSAIL_Ebony";
+  src: url("fonts/CSAIL_Ebony-Regular.ttf");
+}
 
 body {
-  font-family: "Asap", sans-serif;
+  font-family: "CSAIL_Ebony", sans-serif;
 }
 
 .content {
