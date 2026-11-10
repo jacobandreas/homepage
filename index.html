@@ -13,15 +13,15 @@
   <img class="margin" src="figs/head_small.jpg" width="100%">
 
   <p>
-    <b>I'm interested in language as a communicative and computational tool.</b>
-    People learn to understand and generate novel utterances from remarkably
-    little data. Having learned language, we use it acquire new concepts and to
-    structure our reasoning. Current machine learning techniques fall short of
-    human abilities in both their capacity to <i>learn language</i> and <i>learn
-    from language</i> about the rest of the world. My research aims to
-    understand the computational foundations of language learning,
-    and to build general-purpose intelligent systems that can communicate
-    effectively with humans and learn from human guidance.
+    <b>I'm interested in language as a tool for communication and reasoning.</b>
+    Humans language from remarkably little data. Once learned, language is the
+    most distinctive and powerful feature of human cognition: we use it to
+    acquire new information, coordinate with others, and structure our
+    thoughts. Over the last decade, language has also become the primary
+    vehicle by which AI systems learn and reason. My lab builds tools for
+    understanding how LMs work, develops techniques for specifying and steering
+    their behavior, and tries to figure out what they can teach us about
+    language learning and understanding in humans.
   </p>
 
   <p>
@@ -68,71 +68,50 @@
 
   <hr/>
 
-  Some current research directions:
+  Some representative research directions:
 
   <div class="highlight">
-    <!--<img src="figs/l3.jpg" class="margin">-->
-    <h4>Interactive learning and teaching</h4>
+    <!--<img src="figs/neuralese.jpg" class="margin">-->
+    <h4>Understanding neural models</h4>
     <p>
-      Much of what humans know (and know how to do) comes not from
-      observation, but rich supervision provided in language by skilled
-      teachers.  But almost all machine learning research focuses on learning
-      from comparatively low-level demonstrations or interactions. How do we
-      enable more natural and efficient learning from natural language
-      supervision instead?
-    </p>
-    <p>
-      <b>Papers</b>:<br/>
-      <a href="https://arxiv.org/abs/2310.11589">Eliciting human preferences with language models</a> (ICLR 2025)<br/>
-      <a href="https://arxiv.org/abs/2401.08574">Deductive closure training</a> (ACL Findings 2024)<br/>
-      <a href="https://arxiv.org/abs/2312.08566">Learning adaptive planning representations with natural langauge guidance</a> (ICLR 2024)<br/>
+      My lab is probably best known for work on deep network interpretability.
+      We developed the first "automated interpretability" techniques, which
+      train neural nets to translate neural features and representations into
+      natural language
+      [<a href="https://arxiv.org/abs/1704.06960">ADK18</a>,
+      <a href="https://arxiv.org/abs/2201.11114">HSB+22</a>]. We also provided 
+      some of the early characterizations of in-context learning
+      [<a href="https://arxiv.org/abs/2211.15661">ASA+22</a>] and world modeling
+      capabilities in LMs
+      [<a href="https://arxiv.org/abs/2106.00737">LNA21</a>,
+      <a href="https://arxiv.org/abs/2503.02854">LGA25</a>]. These days we're
+      interested in automated interpretability techniques that explain models
+      using code rather than language
+      [<a href="https://arxiv.org/abs/2606.19317">HLA26</a>], and in 
+      "introspective" approaches to interpretability
+      [<a href="https://arxiv.org/abs/2511.08579">LGH+26</a>].
     </p>
   </div>
 
   <div class="highlight">
     <!--<img src="figs/neuralese.jpg" class="margin">-->
-    <h4>Scientific understanding of neural models</h4>
+    <h4>Elicitation and monitoring</h4>
     <p>
-      What tools do we need to help humans understand the features and
-      representational strategies that black-box machine learning algorithms
-      discover? To what extent do these strategies reflect abstractions that we
-      already have names for?
-    </p>
-    <p>
-      <b>Papers</b>:<br/>
-      <a href="https://arxiv.org/abs/2211.15661">What learning algorithm is in-context learning? Investigations with linear models</a> (ICLR 2023)<br/>
-      <a href="https://arxiv.org/abs/2201.11114">Natural language descriptions of deep visual features</a> (ICLR 2022)<br/>
-      <a href="https://arxiv.org/abs/2106.00737">Implicit representations of meaning in neural language models</a> (ACL 2021)<br/>
-    </p>
-  </div>
-
-  <div class="highlight">
-    <!--<img src="figs/compositionality.jpg" class="margin">-->
-    <h4>Human-like language understanding</h4>
-    <p>
-      Humans learn language much faster&mdash;and employ it much more
-      flexibly&mdash;than even the most sophisticated language models that exist
-      today. How can we use computational models to understand the algorithms
-      and inductive biases that support human language learning and
-      comprehension? How do we use these to build better language processing
-      systems?
-    </p>
-    <p>
-      <b>Papers</b>:<br/>
-      <a href="https://arxiv.org/abs/2311.09712">Equilibrium computation as a model of pragmatic reasoning</a> (NAACL 2024) <br/>
-      <a href="https://arxiv.org/abs/2201.12926">Compositionality as lexical symmetry</a> (ACL 2023)</br>
-      <a href="https://arxiv.org/abs/2211.01288">Characterizing intrinsic compositionality in transformers with tree projections</a> (ICLR 2023)<br/>
+      Current deep network models are expressive enough to do more or less
+      whatever we want when trained on enough of the right kind of data. Thus
+      the primary challenges are (1) figuring out how to specify these models
+      should actually do, and (2) verifying that they do it. Much of our recent
+      work focuses on interactive preference elicitation methods that can
+      learn richer and more reliable models of human preferences than people can
+      produce unassisted
+      [<a href="https://arxiv.org/abs/2310.11589">L*T*GA25</a>, 
+      <a href="https://arxiv.org/abs/2510.20886">GPTA26</a>]
+      and methods that enable models to accurately self-report behavioral
+      tendencies
+      [<a href="https://arxiv.org/abs/2507.16806">D*P*S+26</a>,
+      <a href="https://arxiv.org/abs/2606.18327">PRG+26</a>].
     </p>
   </div>
-
-  <p>
-    I'm also interested in
-    <a href="https://arxiv.org/abs/1705.03919">trees</a>,
-    <a href="https://www.aclweb.org/anthology/P13-1091/">graphs</a>, 
-    <a href="https://arxiv.org/abs/1604.00562">games</a>,
-    and
-    <a href="https://papers.nips.cc/paper/5432-unsupervised-transcription-of-piano-music">sounds</a>.
-  </p>
 
   <hr/>
 
@@ -143,7 +122,7 @@
     L Lov&aacute;sz <a href="https://www.sciencedirect.com/science/article/pii/B9780720422627500181">to</a>
     P Erd&#337;s). 
     My Kevin Bacon number (and consequently my Erd&#337;s-Bacon number) remains
-    <a href="http://jacobandreas.net/misc/bacon.html">lamentably undefined</a>,
+    lamentably undefined,
     but my Kevin Knight number (it's
     <a href="https://u.cs.biu.ac.il/~yogo/">a thing</a>)
     is one. I have never starred in a film with Kevin Knight. Noam Chomsky is
